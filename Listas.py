@@ -11,10 +11,37 @@ def acceso_indice():
 # Modificacion de elementos
 def modificacion_elementos():
     print(" ")
-    print("Elemento sin modificar: ", miLista[2])
+    print("Lista sin la modificacion: ", miLista)
+    print(" ")
     miLista[2] = 11
-    print("Elemento del indice 2 modificado: ", miLista[2])
+    print("Lista después de la modificación: ", miLista)
+    print(" ")
+    
+# Agregar elementos
+def agregar_append():
+    print(" ")
+    print("Lista sin el elemento agregado: ", miLista)
+    print(" ")
+    miLista.append(256)
+    print("Lista después de agregar el elemento: ", miLista)
+    print(" ")
+    
+def agregar_extend():
+    print(" ")
+    print("Lista sin los elementos agregado: ", miLista)
+    print(" ")
+    miLista.extend([22, 57, 38])
+    print("Lista después de agregar los elementos: ", miLista)
+    print(" ")
+    
+def agregar_insert():
+    print(" ")
+    print("Lista sin el elemento insertado: ", miLista)
+    print(" ")
+    miLista.insert(0, 1055)
+    print("Lista después de agregar el elemento: ", miLista)
+    print(" ")
     
 
-modificacion_elementos()
+agregar_insert()
 
