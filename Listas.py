@@ -1,5 +1,6 @@
 # Creacion de nuestra lista
 miLista = [15, 33, 47, 88, 66]
+nuevaLista = []
 
 # Acceso por indice en nuestra lista
 
@@ -84,9 +85,22 @@ def copiado():
     copiaLista = miLista[:]
     print("Nuestra lista copiada es: ", copiaLista)
     
-
-
+def forIteracion():
+    print(" ")
+    print("Lista: ", miLista)
+    for Lista in miLista:
+        print("Imprime cada elemento en la consola: ", Lista)
+    print(" ")
+    print("Obtener los numeros pares de nuestra lista con for")
+    for x in miLista:
+        if x % 2 == 0:
+            nuevaLista.append(x)
+            print(nuevaLista)
+            
+def compresionLista():
+    nuevaLista = [x for x in miLista if x % 2 == 0]
+    print(nuevaLista)
 # Ejecutar nuestra funcion    
 
-copiado()
+compresionLista()
 
