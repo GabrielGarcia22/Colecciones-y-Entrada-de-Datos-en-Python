@@ -41,7 +41,52 @@ def agregar_insert():
     miLista.insert(0, 1055)
     print("Lista después de agregar el elemento: ", miLista)
     print(" ")
+
+
+# Eliminar elementos
+def eliminar_remove():
+    print(" ")
+    print("Lista sin el elemento removido: ", miLista)
+    print(" ")
+    miLista.remove(33)
+    print("Lista después de remover el elemento: ", miLista)
+    print(" ")
+    
+def eliminar_pop():
+    print(" ")
+    print("Lista sin el elemento removido: ", miLista)
+    print(" ")
+    elementoEliminado = miLista.pop()
+    print("El elemento que fue eliminado es: ", elementoEliminado)  # El pop elimina y devuelve el ultimo elemento
+    print("Lista despues del uso de pop", miLista)
+    
+def eliminar_clear():
+    print(" ")
+    print("Lista sin aplicar el clear", miLista)
+    print(" ")
+    miLista.clear()
+    print("Lista despues de aplicar el clear", miLista)
+    
+# Slicing y copiado de listas
+
+def slicing():
+    print(" ")
+    print("Lista: ", miLista)
+    print(" ")
+    subLista = miLista[1:4]
+    print("Nuestra subLista es: ", subLista)
+    print(" ")
+    
+def copiado():
+    print(" ")
+    print("Lista: ", miLista)
+    print(" ")
+    copiaLista = miLista[:]
+    print("Nuestra lista copiada es: ", copiaLista)
     
 
-agregar_insert()
+
+# Ejecutar nuestra funcion    
+
+copiado()
 
