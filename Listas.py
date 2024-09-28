@@ -7,6 +7,7 @@ nuevaLista = []
 def acceso_indice():
     print(" ")
     print("Elemento del indice 1: ", miLista[1])  # La salida sera el numero 33
+    
 
 
 # Modificacion de elementos
@@ -18,14 +19,19 @@ def modificacion_elementos():
     print("Lista después de la modificación: ", miLista)
     print(" ")
     
+
+    
+    
+    
 # Agregar elementos
 def agregar_append():
     print(" ")
     print("Lista sin el elemento agregado: ", miLista)
     print(" ")
-    miLista.append(256)
+    miLista.append(55)
     print("Lista después de agregar el elemento: ", miLista)
     print(" ")
+    
     
 def agregar_extend():
     print(" ")
@@ -35,13 +41,15 @@ def agregar_extend():
     print("Lista después de agregar los elementos: ", miLista)
     print(" ")
     
+    
 def agregar_insert():
     print(" ")
     print("Lista sin el elemento insertado: ", miLista)
     print(" ")
-    miLista.insert(0, 1055)
+    miLista.insert(1, 55)
     print("Lista después de agregar el elemento: ", miLista)
     print(" ")
+    
 
 
 # Eliminar elementos
@@ -53,6 +61,7 @@ def eliminar_remove():
     print("Lista después de remover el elemento: ", miLista)
     print(" ")
     
+    
 def eliminar_pop():
     print(" ")
     print("Lista sin el elemento removido: ", miLista)
@@ -61,6 +70,7 @@ def eliminar_pop():
     print("El elemento que fue eliminado es: ", elementoEliminado)  # El pop elimina y devuelve el ultimo elemento
     print("Lista despues del uso de pop", miLista)
     
+    
 def eliminar_clear():
     print(" ")
     print("Lista sin aplicar el clear", miLista)
@@ -68,6 +78,7 @@ def eliminar_clear():
     miLista.clear()
     print("Lista despues de aplicar el clear", miLista)
     
+
 # Slicing y copiado de listas
 
 def slicing():
@@ -78,12 +89,15 @@ def slicing():
     print("Nuestra subLista es: ", subLista)
     print(" ")
     
+    
 def copiado():
     print(" ")
     print("Lista: ", miLista)
     print(" ")
     copiaLista = miLista[:]
     print("Nuestra lista copiada es: ", copiaLista)
+    
+
     
 def forIteracion():
     print(" ")
@@ -96,11 +110,17 @@ def forIteracion():
         if x % 2 == 0:
             nuevaLista.append(x)
             print(nuevaLista)
+                 
+
             
 def compresionLista():
+    print(" ")
+    print("Lista: ", miLista)
     nuevaLista = [x for x in miLista if x % 2 == 0]
     print(nuevaLista)
-# Ejecutar nuestra funcion    
-
+    
+    
 compresionLista()
+
+
 

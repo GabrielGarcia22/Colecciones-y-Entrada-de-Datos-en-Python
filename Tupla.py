@@ -6,6 +6,8 @@ def acceso_indice():
     print("Elemento del indice 1: ", miTupla[1])  # La salida sera el numero 2
     print(" ")
     
+acceso_indice()
+    
 def metodo_count():
     print(" ")
     print("Cuanta veces aparece el valor: ", miTupla.count(22)) # Retorna la cantidad de veces que un valor aparece en la tupla
