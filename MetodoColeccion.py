@@ -66,5 +66,29 @@ def coleccionOperaciones_len():
     print(len(miDiccionario))
     print(" ")
     
-coleccionOperaciones_len()    
+def coleccionOperaciones_in():
+    print(" ")  
+    print(55 in miLista)   # Verifica si un elemento está en una colección
+    print(4 in miTupla)
+    print("Nombre" in miDiccionario)
+    print(" ")
+    
+def coleccionOperaciones_not_in():
+    print(" ")  
+    print(55 not in miLista)   # Verifica si un elemento está en una colección
+    print(4 not in miTupla)
+    print("Nombre" not in miDiccionario)
+    print(" ")
+    
+def coleccionOperaciones_compresionLista():
+    numeroPares = [x for x in range(11) if x % 2 == 0]
+    print(numeroPares)
+    
+    
+def coleccionOperaciones_compresionDiccionario():
+    numeroPares = {x for x in range(11) if x % 2 == 0}
+    print(numeroPares)
+    
+coleccionOperaciones_compresionDiccionario()
+    
 
