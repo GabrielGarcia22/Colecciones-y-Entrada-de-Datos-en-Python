@@ -59,5 +59,12 @@ def coleccionDiccionario_update():
     print(miDiccionario)
     print(" ")
     
-coleccionDiccionario_update()    
+def coleccionOperaciones_len():
+    print(" ")  
+    print(len(miLista))   # Devuelve el número de elementos en una colección
+    print(len(miTupla))
+    print(len(miDiccionario))
+    print(" ")
+    
+coleccionOperaciones_len()    
 
