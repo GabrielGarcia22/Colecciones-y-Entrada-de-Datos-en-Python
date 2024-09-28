@@ -68,4 +68,28 @@ def get_clave():
     print(nombre)
     print(" ")
     
-acceso_clave()
+def update_clave():
+    print(" ")
+    miDiccionario.update({"Edad": 25, "Profesion": "Estudiante"})
+    print(miDiccionario)
+    print(" ")
+    
+def iteracion_clave():
+    print(" ")
+    for clave in miDiccionario.keys():
+        print(clave)
+    print(" ")
+    
+def iteracion_valor():
+    print(" ")
+    for valor in miDiccionario.values():
+        print(valor)
+    print(" ")
+
+def iteracion_claveValor():
+    print(" ")
+    for clave, valor in miDiccionario.items():
+        print(f"{clave}: {valor}")
+    print(" ")
+    
+iteracion_claveValor()
