@@ -8,7 +8,6 @@ vehiculos = {
 def asignacion_1():
     usuario = ("Gabriel", "Garcia", 23,)
     print(" ")
-    usuario[0] = "Miguel"
     print(f"Nombre: {usuario[0]}")
     print(f"Apellido: {usuario[1]}")
     print(f"Edad: {usuario[2]}")
