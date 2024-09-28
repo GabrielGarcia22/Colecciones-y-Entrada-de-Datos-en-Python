@@ -93,12 +93,6 @@ def coleccionOperaciones_compresionDiccionario():
     print(numeroPares)
     print(" ")  
     
-def coleccionOperaciones_compresionConjunto():
-    print(" ")  
-    numeroPares = {x for x in range(11) if x % 2 == 0}
-    print(numeroPares)
-    print(" ")  
-    
 coleccionOperaciones_compresionDiccionario()
     
 
